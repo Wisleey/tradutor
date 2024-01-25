@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconhecimento de Voz com Tradução</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://codepen.io/abdullahturkmen/pen/ZEypWjK.css'>
+</head>
+<body>
+    <div class="container">
+        <h1>Reconhecimento de Voz com Tradução</h1>
+        <label for="targetLanguage">Selecione o idioma:</label>
+        <select id="targetLanguage" class="custom-select">
+            <option value="en"><img class="flag" src="/fotos/eua.jpg" alt="English"> Inglês</option>
+            <option value="es">Espanhol</option>
+            <option value="fr">Francês</option>
+            <option value="de">Alemão</option>
+            <option value="it">Italiano</option>
+            <option value="ja">Japonês</option>
+            <!-- Adicione mais idiomas conforme necessário -->
+        </select>
+        <button id="startBtn" class="mic">Iniciar Reconhecimento</button>
+        <div class="text-display">
+            <div id="textDisplayPT" class="text-box">Texto em Português:</div>
+            <div id="textDisplayTranslated" class="text-box translated-text">Texto Traduzido:</div>
+        </div>
+    </div>
+    <div class="mic">
+        <i class="mic-icon"></i>
+        <div class="mic-shadow"></div>
+    </div>
+    <script src='https://codepen.io/abdullahturkmen/pen/ZEypWjK.js'></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
